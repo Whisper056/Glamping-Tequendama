@@ -245,7 +245,7 @@ header .social-icons a:hover {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: url('Imagenes/css1.png') no-repeat center center;
+    background: url('css1.png') no-repeat center center;
     background-size: cover;
     position: relative;
     margin-bottom: 60px;
@@ -262,22 +262,22 @@ header .social-icons a:hover {
 }
 
 .deluxe-hero {
-    background-image: url('Imagenes/css2.png');
+    background-image: url('css2.png');
 }
 
 .rustic-hero {
-    background-image: url('Imagenes/css3.png');
+    background-image: url('css3.png');
 }
 
 .couples-hero {
-    background-image: url('Imagenes/css4.png');
+    background-image: url('css4.png');
 }
 
 .reservation-hero {
     height: 50vh;
     display: flex;
     align-items: center;
-    background: url('Imagenes/css5.png') no-repeat center center;
+    background: url('css5.png') no-repeat center center;
     background-size: cover;
     position: relative;
     margin-top: 80px;
@@ -417,7 +417,7 @@ header .social-icons a:hover {
 /* === SECCIÓN CTA === */
 .cta {
     padding: 80px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Imagenes/css6.png') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('css6.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
