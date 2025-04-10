@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva | Glamping Tequendama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagenes/Logo12.png" alt="Logo Glamping Tequendama">
+                </a>
+            </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="deluxe.html">Deluxe</a></li>
+                    <li><a href="rustic.html">Rustic</a></li>
+                    <li><a href="couples.html">Couples</a></li>
+                    <li><a href="reserva.html" class="btn-reserva">Reservar</a></li>
+                </ul>
+            </nav>
+            <!-- Añadir iconos sociales al encabezado -->
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@glampingtequendama" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/glampingtequendama" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/glampingtequendama" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="reservation-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Reserva Tu Experiencia</h2>
+                <p>Completa el formulario para iniciar tu escapada a la naturaleza</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <h3>Formulario de Reserva</h3>
+                <form id="booking-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo*</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono*</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="fecha-llegada">Fecha de llegada*</label>
+                            <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+                        </div>
+                        
+                        <div class="form-group half">
+                            <label for="fecha-salida">Fecha de salida*</label>
+                            <input type="date" id="fecha-salida" name="fecha-salida" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tipo-glamping">Tipo de Glamping*</label>
+                        <select id="tipo-glamping" name="tipo-glamping" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="rustic">Rustic</option>
+                            <option value="couples">Couples</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="huespedes">Número de huéspedes*</label>
+                        <select id="huespedes" name="huespedes" required>
+                            <option value="1">1 persona</option>
+                            <option value="2" selected>2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios o solicitudes especiales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones*</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Confirmar Reserva</button>
+                </form>
+            </div>
+            
+            <div class="reservation-info">
+                <div class="info-card">
+                    <h4>Información de Reserva</h4>
+                    <p>Al completar este formulario, nuestro equipo se pondrá en contacto contigo en un plazo máximo de 24 horas para confirmar la disponibilidad y proceder con el pago del 50% para asegurar tu reserva.</p>
+                    
+                    <h4>Políticas de Cancelación</h4>
+                    <ul>
+                        <li>Cancelación hasta 15 días antes: reembolso del 100%</li>
+                        <li>Cancelación entre 7-14 días antes: reembolso del 50%</li>
+                        <li>Cancelación con menos de 7 días: sin reembolso</li>
+                    </ul>
+                    
+                    <h4>Horarios</h4>
+                    <p><strong>Check-in:</strong> 3:00 PM - 8:00 PM<br>
+                    <strong>Check-out:</strong> Hasta las 12:00 PM</p>
+                    
+                    <h4>¿Necesitas ayuda?</h4>
+                    <p>Llámanos al +57 300 123 4567 o escríbenos a reservas@glampingtequendama.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="Imagenes/Logo9.png" alt="Logo Glamping Tequendama">
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="deluxe.html">Deluxe</a></li>
+                        <li><a href="rustic.html">Rustic</a></li>
+                        <li><a href="couples.html">Couples</a></li>
+                        <li><a href="reserva.html">Reservar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.tiktok.com/@glampingtequendama" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/glampingtequendama" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/glampingtequendama" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p>Email: info@glampingtequendama.com</p>
+                    <p>Teléfono: +57 300 123 4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glamping Tequendama. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/573001234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contáctanos</span>
+    </a>
+</body>
+</html>
