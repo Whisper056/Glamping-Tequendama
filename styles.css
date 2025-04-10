@@ -891,6 +891,27 @@ footer {
         top: 80px; /* Ajustado para la nueva altura del header */
     }
 }
+.hero {
+    height: 100vh; /* Mantener altura completa */
+    display: flex;
+    align-items: flex-start; /* Cambiar a flex-start para mejor control */
+    padding-top: 150px; /* Añadir padding superior para bajar el contenido */
+}
+
+.hero-content {
+    margin-top: 40px; /* Empujar el contenido hacia abajo desde el container */
+    position: relative;
+    z-index: 2; /* Asegurar que esté por encima del overlay */
+}
+
+.hero-content h2 {
+    font-size: 2.2rem; /* Ajustar tamaño para móviles */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+}
 
 
 @media (max-width: 576px) {
